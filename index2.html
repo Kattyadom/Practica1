@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primer página web responsive </title>
+</head>
+<body>
+    <style>
+        body {
+            margin:0;
+            font-family: Arial, sans-serif;
+            line-height: 1.5;
+        }
+        header, nav, main, footer{
+            padding: 15px;
+        }
+        header{
+            background: #333;
+            color: white;
+        }
+        nav {
+            background: #eee;
+            text-align: center;
+        }
+        footer{
+            background: #333;
+            color: white;
+            text-align: center;
+        }
+        .contenedor{
+            display: flex;
+            gap: 15px;
+            padding: 15px;
+        }
+        .col{
+            background: #f6f6f6;
+            padding: 15px;
+            flex: 1;
+            box-shadow:#615a5a 4px 4px 4px 4px;
+        }
+        @media (max-width: 700px) {
+            .contenedor{
+                flex-direction: column;
+                                        }
+        }
+        nav a {
+            margin-right: 10px;
+            text-decoration: none;
+            color: #333;
+        }
+        nav a:hover{
+            text-decoration: underline;
+            background: #222;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+
+    <header>
+        <h1> Mi web responsive - Kattya Dominguez </h1>
+        <p> Ejemplo pro de página responsive. Siempre la más nunca la menos </p>
+    </header>
+
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#">Información</a>
+        <a href="#">Contacto</a>
+    </nav>
+
+    <main>
+        <div class="contenedor">
+        <section class="col">
+            <h2> Sección 1 </h2>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus mollitia aspernatur iure esse, voluptatibus modi porro quidem ratione architecto qui veniam debitis officia deserunt illum id incidunt. Id, ipsam deserunt? </p>
+            <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur officia temporibus ipsum error nemo laborum, ullam sapiente mollitia recusandae voluptates exercitationem illo ratione rerum autem hic. Quos vel ullam molestiae? </p>
+            <img src="https://i.pinimg.com/736x/b6/7e/93/b67e932db1aebd3c11ba6220a7c0be42.jpg">
+        </section>
+
+        <section class="col">
+            <h2> Sección 2 </h2>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus mollitia aspernatur iure esse, voluptatibus modi porro quidem ratione architecto qui veniam debitis officia deserunt illum id incidunt. Id, ipsam deserunt? </p>
+            <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur officia temporibus ipsum error nemo laborum, ullam sapiente mollitia recusandae voluptates exercitationem illo ratione rerum autem hic. Quos vel ullam molestiae? </p>
+             <img src="https://i.pinimg.com/736x/c9/e7/9c/c9e79c5426baa3ff89c17b9c9e81c30b.jpg">
+        </section>
+
+        <section class="col">
+            <h2> Sección 3 </h2>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus mollitia aspernatur iure esse, voluptatibus modi porro quidem ratione architecto qui veniam debitis officia deserunt illum id incidunt. Id, ipsam deserunt? </p>
+            <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur officia temporibus ipsum error nemo laborum, ullam sapiente mollitia recusandae voluptates exercitationem illo ratione rerum autem hic. Quos vel ullam molestiae? </p>
+        </section>
+    </main>
+
+    <footer>
+        <p> 02026 - Ejemplo pro </p>
+    </footer>
+</body>
+</html>
